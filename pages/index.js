@@ -9,8 +9,9 @@ export default function Home() {
       </Head>
 
       <main>
+        <h1 className='title'>Hey mf</h1>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
@@ -67,6 +68,8 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          color: #efefef;
+          background-color: #100622;
         }
 
         main {
@@ -103,7 +106,7 @@ export default function Home() {
         }
 
         .title a {
-          color: #0070f3;
+          color: #009090;
           text-decoration: none;
         }
 
@@ -130,7 +133,7 @@ export default function Home() {
         }
 
         code {
-          background: #fafafa;
+          background: #0a0a0a;
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
