@@ -41,6 +41,7 @@ export default function Home({ allPostsData }) {
           </ul>
         </section>
       </section>
+      <i>Beta build 0.5</i>
     </Layout>
   )
 }
