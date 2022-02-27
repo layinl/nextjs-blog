@@ -1,3 +1,7 @@
+:root {
+  background-color: #312246;
+}
+
 html,
 body {
   padding: 0;
@@ -11,6 +15,8 @@ body {
   color: #efefef
 }
 
+/*#312246;*/
+
 * {
   box-sizing: border-box;
 }
@@ -20,6 +26,7 @@ a {
   font-weight: 300;
   text-decoration: none;
 }
+/*#c56dff;*/
 
 a:hover {
   text-decoration: underline;

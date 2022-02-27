@@ -23,20 +23,20 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hello. I'm Layin, the Sauce Hunter. I can search sources, generally images.</p>
-        <p>Chech my <Link href="/posts/first-post"> First post</Link></p>
+        <p>Chech my <Link href="/posts/first-post">First post</Link></p>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
           <ul className={utilStyles.list}>
-            {allPostsData.map(({ id, date, title }) => (
-              <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
+            {allPostsData.map(({ id, date, title, visible }) => (
+              (visible === 'true' ? (<li className={utilStyles.listItem} key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+                <br />
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+              </li>) : '' )
             ))}
           </ul>
         </section>
