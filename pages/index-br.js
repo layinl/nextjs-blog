@@ -15,15 +15,15 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ allPostsData }) {
+export default function HomeBR({ allPostsData }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello. I'm Layin, the Sauce Hunter. I can search sources, generally images.</p>
-        <p>Chech my <Link href="/posts/first-post">First post</Link></p>
+        <p>Olá. Sou Layin, o Caçador de Links. Eu caço fontes, geralmente imagens.</p>
+        <p>Veja meu <Link href="/posts/first-post">primeiro post (inglês)</Link></p>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
           <ul className={utilStyles.list}>
@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
               </li>) : '' )
             ))}
           </ul>
-          <Link href={'index-br'}>Blog em português</Link>
+          <Link href={"/"}>Blog in english</Link>
         </section>
       </section>
       <i>Beta build 0.5</i>

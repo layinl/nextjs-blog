@@ -4,8 +4,9 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Sauce Hunter Layin'
+let name = 'Sauce Hunter Layin'
 export const siteTitle = 'Next.js Sample Website'
+export let lang = "English";
 
 export default function Layout({ children, home }) {
   return (

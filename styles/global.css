@@ -25,11 +25,14 @@ a {
   color: #c56dff;
   font-weight: 300;
   text-decoration: none;
+  transition-duration: 0.3s;
 }
 /*#c56dff;*/
 
 a:hover {
   text-decoration: underline;
+  text-decoration: none;
+  color: #e3c3f8;
 }
 
 img {
