@@ -22,7 +22,7 @@ export default function HomeBR({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Olá. Sou Layin, o Caçador de Links. Eu caço fontes, geralmente imagens.</p>
+        <p>Olá. Sou Layin, o Caçador de Links. Eu caço links, geralmente imagens.</p>
         <p>Veja meu <Link href="/posts/first-post">primeiro post (inglês)</Link></p>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
